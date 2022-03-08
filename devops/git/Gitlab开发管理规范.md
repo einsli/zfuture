@@ -29,7 +29,7 @@ master和dev不可直接提交，需要pull request, code review 后merge
 |bugfix|bug修复分支|DEV|用于修复dev分支测试出的bug|
 |hotfix|紧急修复分支|PROD|用于修复master分支使用过程中发现的bug|
 
-![avatar](./imgs/git_dev_process.png)
+![avatar](../../../imgs/git_dev_process.png)
 
 1. 需求收集、论证和分解后，指定开发人员从dev分支根据需求创建feature分支；
 2. 开发人员在feature分支开发，本地开发测试完成后提交到分支；
