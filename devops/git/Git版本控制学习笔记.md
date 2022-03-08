@@ -32,14 +32,14 @@ git 配置有三个范围
 
 一般用全局范围配置
 
-1.2.1 配置全局用户信息
+### 1.2.1 配置全局用户信息
 
 ```bash
 # git config --global user.name "einsli"
 # git config --global user.email "einsli@123.com"
 ```
 
-1.2.2 查看配置信息
+### 1.2.2 查看配置信息
 
 ```bash
 # git config --list
@@ -58,7 +58,7 @@ alias.co=checkout
 core.excludesfile=/Users/einsli/.gitignore_global
 ```
 
-1.2.3 重新配置用户名，可使用 unset命令
+### 1.2.3 重新配置用户名，可使用 unset命令
 
 ```bash
 # git config --unset --global user.name
@@ -80,13 +80,13 @@ core.excludesfile=/Users/einsli/.gitignore_global
 
 用户名选项已经移除
 
-1.2.4 git 输出主题颜色配置
+### 1.2.4 git 输出主题颜色配置
 
 ```bash
 # git config --global color.ui true
 ```
 
-1.2.5 产看git配置
+### 1.2.5 产看git配置
 
 git 配置会保存在当前用户主目录下面
 
@@ -115,7 +115,7 @@ output 如下
 				excludesfile = /Users/einsli/.gitignore_global
 ```
 
-1.2.6 git 别名设置
+### 1.2.6 git 别名设置
 
 设置别名用alias，比如给check out 设置别名
 
@@ -134,7 +134,7 @@ output 如下
 # souroce ~/.bash_profile
 ```
 
-1.2.7 忽略跟踪文件 全局
+### 1.2.7 忽略跟踪文件 全局
 
 设置全局列表中忽略的文件
 
@@ -142,7 +142,7 @@ output 如下
 # git config --global core.excludesfile=~/.gitignore_global
 ```
 
-1.2.8 忽略跟踪文件 项目级别
+### 1.2.8 忽略跟踪文件 项目级别
 
 在项目目录下，创建.gitignore
 
@@ -162,7 +162,7 @@ https://github.com/github/gitignore
 
 ## 1.3 项目操作
 
-1.3.1 git init
+### 1.3.1 git init
 
 例如当前目录有个test-server，需要进行git追踪
 
@@ -194,7 +194,7 @@ branches    description   info      refs
 
 如果不想用git追踪此项目，删除.git文件即可
 
-1.3.2 git commit 
+### 1.3.2 git commit 
 
 项目提交
 
@@ -270,7 +270,7 @@ On branch master
 nothing to commit, working directory clean1.
 ```
 
-1.3.3 git log 
+### 1.3.3 git log 
 
 查看用户操作记录
 
@@ -288,7 +288,7 @@ Date: Sun Nov 11:07:00 2020 +0800
 		添加index.html文件
 ```
 
-1.3.4 git diff
+### 1.3.4 git diff
 
 查看文件修改前和修改后的区别
 
@@ -304,7 +304,7 @@ Date: Sun Nov 11:07:00 2020 +0800
 # git diff --staged
 ```
 
-1.3.5 git mv 
+### 1.3.5 git mv 
 
 重命名git 已经追踪的文件
 
@@ -415,7 +415,7 @@ On branch master
 Nothing to commit, working directory clean
 ```
 
-1.3.6 git rm
+### 1.3.6 git rm
 
 删除文件有两种方法
 
@@ -433,7 +433,7 @@ git rm 文件名
 # git rm einsli-theme.css
 ```
 
-1.3.7 恢复放放或修改的文件
+### 1.3.7 恢复放放或修改的文件
 
 比如删除index.html
 
@@ -461,7 +461,7 @@ git rm 文件名
 
 **注**: HEAD^ 表示最近一次提交的上一次提交，HEAD^^表示最近一次提交的上两次提交
 
-1.3.8 git revert 
+### 1.3.8 git revert 
 
 恢复文件的历史版本
 
@@ -502,7 +502,7 @@ bb95e87 添加了Bootstrap框架
 aa5673a 恢复了index.html
 ```
 
-1.3.9 git reset
+### 1.3.9 git reset
 
 提交方式
 
@@ -547,7 +547,7 @@ aa5673a 恢复了index.html
 
 相当于直接重置到b6b86提交后的状态
 
-1.3.10 git stash
+### 1.3.10 git stash
 
 可以把修改暂时存到一个地方，保存工作进度
 
@@ -593,7 +593,7 @@ stash{0}: On text-server: 修改了txt文档
 
 **注** stash{0}为工作代号
 
-1.3.11 git log
+### 1.3.11 git log
 
 查看提交的日志
 
