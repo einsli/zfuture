@@ -515,7 +515,7 @@ aa5673a 恢复了index.html
 查看提交记录
 
 ```bash
-# git log --oneline
+git log --oneline
 ```
 
 output如下
@@ -529,21 +529,21 @@ aa5673a 恢复了index.html
 
 使用git reset
 
-— soft
+ --soft
 
 ```bash
-#  git reset --soft b6b86
+git reset --soft b6b86
 ```
 
 提交后会覆盖掉aaab1c0这次提交
 
-— mixed
+-- mixed
 
 执行后暂存区里面的内容不存在了
 
 **注** 与—soft项目，少了类似 git add的操作
 
-—hard
+--hard
 
 相当于直接重置到b6b86提交后的状态
 
@@ -554,13 +554,13 @@ aa5673a 恢复了index.html
 例如当前目录创建了一个新的txt文档，但是提交的时候，不想将当前状态提交
 
 ```bash
-# git stash save "修改了txt文档"
+git stash save "修改了txt文档"
 ```
 
 查看保存的工作进度
 
 ```bash
-# git stash list
+git stash list
 ```
 
 output如下
@@ -572,23 +572,23 @@ stash{0}: On text-server: 修改了txt文档
 查看保存工作进度与当前工作进度有什么区别
 
 ```bash
-# git stash show -p stash{0}
+git stash show -p stash{0}
 ```
 
 **注** -p 以补丁的方式查看 stash{0}为stash工作代号
 
 恢复工作进度
 
-```
-# git stash apply stash{0}
+```shell
+git stash apply stash{0}
 ```
 
 **注**：stash{0}为stash代号
 
 删除工作进度
 
-```
-# git stash drop stash{0}
+```shell
+git stash drop stash{0}
 ```
 
 **注** stash{0}为工作代号
@@ -600,25 +600,25 @@ stash{0}: On text-server: 修改了txt文档
 查看详细信息
 
 ```bash
-# git long
+git long
 ```
 
 显示简单的日志列表
 
 ```bash
-# git log --oneline
+git log --oneline
 ```
 
 控制输出的行数，如显示最近的5条
 
 ```bash
-# git log --oneline -5
+git log --oneline -5
 ```
 
 可以查看指定作者的提交
 
 ```bash
-# git log --online --author="einsli"
+git log --online --author="einsli"
 ```
 
 git log 也支持grep语法
@@ -626,7 +626,7 @@ git log 也支持grep语法
 比如显示关于index.html的提交
 
 ```bash
-# git log --oneline --grep="index.html"
+git log --oneline --grep="index.html"
 ```
 
 也可以指定日志
