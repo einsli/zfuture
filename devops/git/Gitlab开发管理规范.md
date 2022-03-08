@@ -29,7 +29,7 @@ master和dev不可直接提交，需要pull request, code review 后merge
 |bugfix|bug修复分支|DEV|用于修复dev分支测试出的bug|
 |hotfix|紧急修复分支|PROD|用于修复master分支使用过程中发现的bug|
 
-![avatar](../../../imgs/git_dev_process.png)
+![avatar](../../images/git/git_dev_process.png)
 
 1. 需求收集、论证和分解后，指定开发人员从dev分支根据需求创建feature分支；
 2. 开发人员在feature分支开发，本地开发测试完成后提交到分支；
@@ -48,7 +48,7 @@ master和dev不可直接提交，需要pull request, code review 后merge
 4. 一个项目的代码仓库共用一个主的名称，根据前后端来进行后缀命名
 5. 一个项目必须有doc仓储，记录所有产品设计文档、设计图、技术设计文档、接口文档、测试文档，尽量使用Markdown格式。
 
-![avatar](./imgs/git_proj.png)
+![avatar](../../images/git/git_proj.png)
 
 
 ## commit日志规范
