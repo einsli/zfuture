@@ -634,17 +634,17 @@ git log --oneline --grep="index.html"
 比如指定在2020年11月1号之前的提交
 
 ```bash
-# git log --oneline --before="2020-11-01"
+git log --oneline --before="2020-11-01"
 ```
 
 找出一个礼拜之前的提交
 
 ```bash
-# git log --oneline --before="1 week"
+git log --oneline --before="1 week"
 ```
 
 找出三天前的提交
 
 ```bash
-# git log --oneline --before="3 days"
+git log --oneline --before="3 days"
 ```
