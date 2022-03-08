@@ -7,9 +7,9 @@
 git 或者git help 即可查看帮助信息
 
 ```bash
-# git 
+git 
 
-# git help
+git help
 ```
 
 加上某一参数即可查看某一参数详细信息
@@ -17,7 +17,7 @@ git 或者git help 即可查看帮助信息
 如查看add 信息
 
 ```bash
-# git help add
+git help add
 ```
 
 文档内容显示过长，按f键可以向下翻页，b想上翻页，按q退出
@@ -35,14 +35,14 @@ git 配置有三个范围
 ### 1.2.1 配置全局用户信息
 
 ```bash
-# git config --global user.name "einsli"
-# git config --global user.email "einsli@123.com"
+git config --global user.name "einsli"
+git config --global user.email "einsli@123.com"
 ```
 
 ### 1.2.2 查看配置信息
 
 ```bash
-# git config --list
+git config --list
 ```
 
 output 如下
@@ -61,9 +61,9 @@ core.excludesfile=/Users/einsli/.gitignore_global
 ### 1.2.3 重新配置用户名，可使用 unset命令
 
 ```bash
-# git config --unset --global user.name
+git config --unset --global user.name
 
-# git config --list
+git config --list
 ```
 
 output 如下
@@ -83,7 +83,7 @@ core.excludesfile=/Users/einsli/.gitignore_global
 ### 1.2.4 git 输出主题颜色配置
 
 ```bash
-# git config --global color.ui true
+git config --global color.ui true
 ```
 
 ### 1.2.5 产看git配置
@@ -91,7 +91,7 @@ core.excludesfile=/Users/einsli/.gitignore_global
 git 配置会保存在当前用户主目录下面
 
 ```bash
-# cat ~/.gitconfig
+cat ~/.gitconfig
 ```
 
 output 如下
@@ -120,18 +120,18 @@ output 如下
 设置别名用alias，比如给check out 设置别名
 
 ```bash
-# git config ==global alias.co check out
+git config ==global alias.co check out
 ```
 
 可以在系统级别设置别名, 当前平台MacOS平台，用户配置文件名为.bash_profile
 
 ```bash
-# vim ~/.bash_profile
+vim ~/.bash_profile
 
-// 将 alias goc="git check out" 添加到第一行即可
+# 将 alias goc="git check out" 添加到第一行即可
 
-// 退出 并更新
-# souroce ~/.bash_profile
+# 退出 并更新
+souroce ~/.bash_profile
 ```
 
 ### 1.2.7 忽略跟踪文件 全局
@@ -139,7 +139,7 @@ output 如下
 设置全局列表中忽略的文件
 
 ```bash
-# git config --global core.excludesfile=~/.gitignore_global
+git config --global core.excludesfile=~/.gitignore_global
 ```
 
 ### 1.2.8 忽略跟踪文件 项目级别
@@ -167,8 +167,8 @@ https://github.com/github/gitignore
 例如当前目录有个test-server，需要进行git追踪
 
 ```
-# cd test-server
-# git init
+cd test-server
+git init
 ```
 
 output 如下
@@ -182,7 +182,7 @@ Initialized empty Git repository in /Users/einsli/Desktop/server-test/.git
 查看生成的.git文件
 
 ```bash
-# ls .git
+ls .git
 ```
 
 output如下
@@ -203,7 +203,7 @@ branches    description   info      refs
 提交前可查看当前状态信息
 
 ```bash
-# git status
+git status
 ```
 
 output 如下
@@ -223,13 +223,13 @@ nothing added to commit but untracked files present(use "git add" to track)
 commit 之前先执行git add
 
 ```bash
-# git add index.html
+git add index.html
 ```
 
 然后查看下状态
 
 ```bash
-# git status
+git status
 ```
 
 output如下
@@ -247,7 +247,7 @@ Changes to be committed:
 确认提交
 
 ```bash
-# git commit -m '条件index.html'
+git commit -m '条件index.html'
 ```
 
 output如下
@@ -260,7 +260,7 @@ create mode 100644 index.html
 然后查看下状态
 
 ```bash
-# git status
+git status
 ```
 
 output如下
@@ -275,8 +275,8 @@ nothing to commit, working directory clean1.
 查看用户操作记录
 
 ```bash
-# git log
-# git log --oneline //每行显示一次提交
+git log
+git log --oneline //每行显示一次提交
 ```
 
 output 如下
