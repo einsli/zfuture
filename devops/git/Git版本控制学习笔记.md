@@ -276,7 +276,7 @@ nothing to commit, working directory clean1.
 
 ```bash
 git log
-git log --oneline //每行显示一次提交
+git log --oneline # 每行显示一次提交
 ```
 
 output 如下
@@ -295,13 +295,13 @@ Date: Sun Nov 11:07:00 2020 +0800
 比较的文件为工作区暂与存区(git add后里面的内容)里面的内容
 
 ```bash
-# git diff index.html
+git diff index.html
 ```
 
 如果想比较respository与暂存区里面的内容，则需要输入下面命令
 
 ```bash
-# git diff --staged
+git diff --staged
 ```
 
 ### 1.3.5 git mv 
@@ -315,8 +315,8 @@ Date: Sun Nov 11:07:00 2020 +0800
 当前目录下新建style.css，添加内容后并提交
 
 ```bash
-# git add style.css
-# git commit -m "添加style.css"
+git add style.css
+git commit -m "添加style.css"
 ```
 
 在可视化界面将style.css重命名为them.css
@@ -324,7 +324,7 @@ Date: Sun Nov 11:07:00 2020 +0800
 查看当前状态
 
 ```bash
-# git status
+git status
 ```
 
 output 如下
@@ -345,17 +345,17 @@ no changes added to commit (use "git add" and/or "git commit -a")
 
 可以这样执行
 
-```
-# git rm style.css
-// output
-// rm 'style.css'
-# git add theme.css
+```shell
+git rm style.css
+# output
+# rm 'style.css'
+git add theme.css
 ```
 
 查看状态
 
 ```bash
-# git status
+git status
 ```
 
 ```
@@ -367,7 +367,7 @@ Changes to be committed:
 然后提交即可
 
 ```bash
-# git commit -m "重命名style.css为them.css"
+git commit -m "重命名style.css为them.css"
 ```
 
 方法二 
@@ -375,13 +375,13 @@ Changes to be committed:
 git mv 
 
 ```bash
-# git mv theme.css einsli-theme.css
+git mv theme.css einsli-theme.css
 ```
 
 然后产看状态
 
 ```bash
-# git status
+git status
 ```
 
 output 如下
@@ -399,13 +399,13 @@ Changes to be committed:
 在当前目录下创建css文件
 
 ```bash
-# mkdir css
+mkdir css
 ```
 
 查看状态
 
 ```bash
-# git status
+git status
 ```
 
 output如下
@@ -430,7 +430,7 @@ git rm 文件名
 删除单个文件
 
 ```bash
-# git rm einsli-theme.css
+git rm einsli-theme.css
 ```
 
 ### 1.3.7 恢复放放或修改的文件
@@ -438,13 +438,13 @@ git rm 文件名
 比如删除index.html
 
 ```bash
-# git rm index.html
+git rm index.html
 ```
 
 删除后我们想恢复，可使用git checkout命令
 
 ```bash
-# git checkout HEAD -- index.html
+git checkout HEAD -- index.html
 ```
 
 **注**: HEAD 表示当前提交，— 表示当前分支， index.html表示要恢复的文件
@@ -456,7 +456,7 @@ git rm 文件名
 需要把index.html恢复到上一次提交的状态
 
 ```bash
-# git checkout HEAD^ -- index.html
+git checkout HEAD^ -- index.html
 ```
 
 **注**: HEAD^ 表示最近一次提交的上一次提交，HEAD^^表示最近一次提交的上两次提交
@@ -468,7 +468,7 @@ git rm 文件名
 比如新添加了bootstrap框架，并进行了提交，后面不想用，想恢复之前的状态
 
 ```bash
-# git log --oneline
+git log --oneline
 ```
 
 output如下
@@ -482,7 +482,7 @@ aa5673a 恢复了index.html
 不想用boorstrap框架，可以执行以下操作
 
 ```bash
-# git revert bb95e87 
+git revert bb95e87 
 ```
 
 会弹出编辑器，添加描述内容或者直接保存后即可
@@ -490,7 +490,7 @@ aa5673a 恢复了index.html
 然后在查看下提交日志
 
 ```bash
-# git log --oneline
+git log --oneline
 ```
 
 output如下
