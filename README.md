@@ -8,3 +8,6 @@
 
 ### [Docker](https://github.com/einsli/zfuture/tree/main/devops/docker)
 [centos7-docker离线安装](https://github.com/einsli/zfuture/blob/main/devops/docker/centos7%20docker%20%E7%A6%BB%E7%BA%BF%E5%AE%89%E8%A3%85.md)
+
+### [Harbor](https://github.com/einsli/zfuture/tree/main/devops/harbor)
+[Harbor问题排查-unknown blob](https://github.com/einsli/zfuture/blob/main/devops/harbor/Harbor%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5-unknown%20blob.md)
