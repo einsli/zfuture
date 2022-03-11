@@ -12,5 +12,15 @@
 
 对下载的文件解压到指定目录
 
+```shell
+tar -zxvf jdk-8u161-linux-x64.tar.gz -C /usr/local
+```
+
+对解压后的文件做下软链接
+
+```shell
+ln -s /usr/local/jdk1.8.0_161 /usr/local/java
+```
+
 
 
