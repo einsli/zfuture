@@ -31,11 +31,11 @@ external_url: https://registry.bitmart.run
 
 > 本地往私服镜像推送镜像，出现如下错误
 
-![avatar](/Users/einsli/Documents/zfuture/images/devops/harbor/docker_push_unknown_blob.png)
+![avatar](../../images/devops/harbor/docker_push_unknown_blob.png)
 
 > 查看habor的nginx配置，发下了如下报错
 
-![avatar](/Users/einsli/Documents/zfuture/images/devops/harbor/harbor_nginx_err.png)
+![avatar](../../images/devops/harbor/harbor_nginx_err.png)
 
 > docker push 会出现404问题
 
@@ -239,7 +239,7 @@ docker exec -it nginx nginx -s reload
 
 在终端，再推送镜像，提示成功，如下图所示
 
-![avatar](/Users/einsli/Documents/zfuture/images/devops/harbor/docker_push_success.png)
+![avatar](../../images/devops/harbor/docker_push_success.png)
 
 验证成功，至此，问题处理完毕！
 
