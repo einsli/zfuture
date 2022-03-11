@@ -25,3 +25,14 @@ ln -s /usr/local/jdk1.8.0_161 /usr/local/java
 ```
 
 **2.2 配置环境变量**
+
+```shell
+vim /etc/profile
+```
+
+在文件尾部添加如下内容
+
+>export JAVA_HOME=/usr/local/java
+>export JRE_HOME=$JAVA_HOME/jre
+>export CLASSPATH=.:$JAVA_HOME/lib:$JRE_HOME/lib:$CLASSPATH
+>export PATH=$JAVA_HOME/bin:$JRE_HOME/bin:$PATH
