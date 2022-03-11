@@ -24,10 +24,10 @@ tar -zxvf jdk-8u161-linux-x64.tar.gz -C /usr/local
 ln -s /usr/local/jdk1.8.0_161 /usr/local/java
 ```
 
-**2.2 配置系统环境变量**
+**2.2 配置用户环境变量**
 
 ```shell
-vim /etc/profile
+vim ~/.bashrc
 ```
 
 在文件尾部添加如下内容
@@ -41,7 +41,7 @@ vim /etc/profile
 
 执行以下命令，使环境变量生效
 ```shell
-source /etc/profile
+source ~/.bashrc
 ```
 
 **2.3 验证**
