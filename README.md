@@ -11,3 +11,6 @@
 
 ### [Harbor](https://github.com/einsli/zfuture/tree/main/devops/harbor)
 [Harbor问题排查-unknown blob](https://github.com/einsli/zfuture/blob/main/devops/harbor/Harbor%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5-unknown%20blob.md)
+
+### [Environment](https://github.com/einsli/zfuture/tree/main/devops/environment)
+[Centos7下Jdk1.8安装与配置](https://github.com/einsli/zfuture/blob/main/devops/environment/Centos7%E4%B8%8BJdk1.8%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE.md)
