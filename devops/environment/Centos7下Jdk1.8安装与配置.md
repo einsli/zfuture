@@ -10,6 +10,8 @@
 
 ## 二、安装与配置
 
+**2.1安装**
+
 对下载的文件解压到指定目录
 
 ```shell
@@ -22,5 +24,4 @@ tar -zxvf jdk-8u161-linux-x64.tar.gz -C /usr/local
 ln -s /usr/local/jdk1.8.0_161 /usr/local/java
 ```
 
-
-
+**2.2 配置环境变量**
