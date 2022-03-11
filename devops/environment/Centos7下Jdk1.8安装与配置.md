@@ -46,8 +46,14 @@ source /etc/profile
 
 **2.3 验证**
 
-输入一下命令来验证
+输入以下命令来验证下版本
 
 ```shell
+java -version
 ```
 
+得到有如下输出
+
+> java version "1.8.0_161"
+> Java(TM) SE Runtime Environment (build 1.8.0_161-b12)
+> Java HotSpot(TM) 64-Bit Server VM (build 25.161-b12, mixed mode)
