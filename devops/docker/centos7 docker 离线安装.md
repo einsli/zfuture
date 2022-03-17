@@ -98,6 +98,12 @@ systemctl daemon-reload
 systemctl start docker 
 ```
 
+设置开机自启
+
+```shell
+systemctl enable docker
+```
+
 验证
 
 输入以下命令，即可查看docker是否启动
