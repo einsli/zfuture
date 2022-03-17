@@ -11,7 +11,7 @@
 可以下载到本地后上传至服务器，或者在服务器执行以下命令直接下载
 
 ```shell
-$ wget https://download.docker.com/linux/static/stable/x86_64/docker-20.10.8.tgz
+yum -y install wget && wget https://download.docker.com/linux/static/stable/x86_64/docker-20.10.8.tgz
 ```
 
 ## 二、解压安装
@@ -19,7 +19,7 @@ $ wget https://download.docker.com/linux/static/stable/x86_64/docker-20.10.8.tgz
 执行以下命令，对第一步下载的`docker-20.10.8.tgz`进行解压
 
 ```shell
-$ tar -zxvf docker-20.10.8.tgz
+tar -zxvf docker-20.10.8.tgz
 ```
 
 解压后会得到一个`docker`文件夹
