@@ -30,7 +30,7 @@ tar -zxvf docker-20.10.8.tgz
 
 ```shell
 # 拷贝docker文件到制定目录
-$ cp docker/* /usr/bin
+cp docker/* /usr/bin
 ```
 
 验证
@@ -38,7 +38,7 @@ $ cp docker/* /usr/bin
 输入以下命令，验证是否生效
 
 ```shell
-$ docker version
+docker version
 ```
 
 ![avatar](../../images/devops/docker/docker_test.png)
@@ -52,7 +52,7 @@ $ docker version
 docker.service内容如下
 
 ```shell
-$ cat > docker.service << EOF
+cat > docker.service << EOF
 > [Unit]
 > Description=Docker Application Container Engine
 > Documentation=https://docs.docker.com
@@ -83,19 +83,19 @@ $ cat > docker.service << EOF
 移动docker.service到如下目录
 
 ```shell
-$ mv docker.service /usr/lib/systemd/system/
+mv docker.service /usr/lib/systemd/system/
 ```
 
 重新加载配置
 
 ```shell
-$ systemctl daemon-reload
+systemctl daemon-reload
 ```
 
 启动docker
 
 ```shell
-$ systemctl start docker 
+systemctl start docker 
 ```
 
 验证
@@ -103,7 +103,7 @@ $ systemctl start docker
 输入以下命令，即可查看docker是否启动
 
 ```shell
-$ systemctl status docker 
+systemctl status docker 
 ```
 
 ![avatar](../../images/devops/docker/docker_status.png)
